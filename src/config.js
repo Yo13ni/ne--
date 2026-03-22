@@ -60,6 +60,9 @@ export const GALLERY_IMAGES = [
   { src: '/photos/photo-22.png', alt: 'Photo 22', caption: 'My favorite view will always be the one where you’re in it.' },
   { src: '/photos/photo-23.png', alt: 'Photo 23', caption: 'You’re held in my heart—gently, deeply, every single day.' },
   { src: '/photos/photo-24.png', alt: 'Photo 24', caption: 'I love you in ways words can only begin to describe.' },
+  { src: '/photos/photo-25.png', alt: 'Photo 25', caption: 'Your smile in black and white still feels like color to my heart.' },
+  { src: '/photos/photo-26.png', alt: 'Photo 26', caption: 'When you look at the camera like this, I fall in love all over again.' },
+  { src: '/photos/photo-27.png', alt: 'Photo 27', caption: 'Soft light, soft soul—you are my favorite kind of beautiful.' },
 ]
 
 /** Audio in `public/` — served from site root (spaces encoded in URL) */
