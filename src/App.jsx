@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+import BirthdayCard from './components/BirthdayCard'
 import AmharicPoem from './components/AmharicPoem'
 import MemoryGallery from './components/MemoryGallery'
 import CountdownMusic from './components/CountdownMusic'
@@ -20,6 +21,7 @@ export default function App() {
     <div className="min-h-svh bg-black">
       <main>
         <Hero />
+        <BirthdayCard />
         <AmharicPoem />
         <MemoryGallery />
         <CountdownMusic />

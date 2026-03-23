@@ -108,6 +108,33 @@
   }
 }
 
+@keyframes flame-dance {
+  0%,
+  100% {
+    transform: translateY(0) scale(1) rotate(-2deg);
+    opacity: 1;
+  }
+  33% {
+    transform: translateY(-1px) scale(1.05) rotate(1deg);
+    opacity: 0.95;
+  }
+  66% {
+    transform: translateY(0.5px) scale(0.98) rotate(-1deg);
+    opacity: 1;
+  }
+}
+
+@keyframes smoke-wisp {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-16px) scale(1.4);
+  }
+}
+
 @layer utilities {
   .font-display {
     font-family: var(--font-family-display);
@@ -137,4 +164,12 @@
 
 .animate-shimmer {
   animation: shimmer 3s linear infinite;
+}
+
+.animate-flame {
+  animation: flame-dance 0.45s ease-in-out infinite;
+}
+
+.animate-smoke-wisp {
+  animation: smoke-wisp 1.2s ease-out forwards;
 }

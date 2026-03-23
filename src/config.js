@@ -67,3 +67,19 @@ export const GALLERY_IMAGES = [
 
 /** Audio in `public/` — served from site root (spaces encoded in URL) */
 export const OUR_SONG_PATH = '/wedeshalhu%20degeme.m4a'
+
+/** Birthday card — number of candles on the cake */
+export const BIRTHDAY_CANDLE_COUNT = 5
+
+/** Shown above the cake while the candles are lit */
+export const BIRTHDAY_BLOW_INSTRUCTION =
+  'Make a wish—then blow toward your phone to put out the candles, or tap each flame.'
+
+/**
+ * Optional personal video — add your MP4/WebM under `public/` and set the path here.
+ * Example: '/birthday-message.mp4'
+ */
+export const BIRTHDAY_VIDEO_URL = ''
+
+/** Message after the candles (and under the video, if you add one) */
+export const BIRTHDAY_REVEAL_MESSAGE = 'ቀሪ ዘመንሽ ይባረክ የኔ ፍቅር'

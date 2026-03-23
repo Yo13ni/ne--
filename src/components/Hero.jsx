@@ -81,6 +81,15 @@ export default function Hero() {
           <p className="animate-fade-in-up mx-auto max-w-lg font-display text-lg leading-[1.85] text-neutral-300 delay-100 lg:mx-0 md:text-xl">
             {HERO_MESSAGE}
           </p>
+          <p className="animate-fade-in-up mt-10 delay-200">
+            <a
+              href="#birthday"
+              className="inline-flex items-center gap-2 font-display text-sm tracking-wide text-gold-500/90 underline decoration-gold-500/35 underline-offset-4 transition-colors hover:text-gold-400 hover:decoration-gold-400/50"
+            >
+              Open your birthday card
+              <span aria-hidden>→</span>
+            </a>
+          </p>
         </div>
       </div>
     </section>
