@@ -1,4 +1,5 @@
 import { HER_NAME, HERO_LOGO, HERO_MESSAGE, HERO_PHOTO } from '../config'
+import { publicUrl } from '../utils/publicUrl'
 import FloatingHearts from './FloatingHearts'
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Dreamy blurred portrait backdrop */}
       <div className="pointer-events-none absolute inset-0">
         <img
-          src={HERO_PHOTO}
+          src={publicUrl(HERO_PHOTO)}
           alt=""
           className="h-full w-full scale-110 object-cover opacity-25 blur-3xl"
           aria-hidden
@@ -53,7 +54,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-xl shadow-[0_12px_40px_-8px_rgba(0,0,0,0.85)] ring-1 ring-gold-500/30">
               <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
               <img
-                src={HERO_PHOTO}
+                src={publicUrl(HERO_PHOTO)}
                 alt={`${HER_NAME}, my love`}
                 className="aspect-3/4 w-full object-cover object-[center_20%] md:max-h-[min(70vh,520px)]"
                 width={480}

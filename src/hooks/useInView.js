@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
-export function useInView({ once = true, threshold = 0.15 } = {}) {
+// threshold 0 = any pixel visible (safe for very tall sections). 0.15 breaks tall galleries.
+export function useInView({ once = true, threshold = 0 } = {}) {
   const ref = useRef(null)
   const [inView, setInView] = useState(false)
 

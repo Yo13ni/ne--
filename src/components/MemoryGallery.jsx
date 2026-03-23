@@ -1,5 +1,6 @@
 import { GALLERY_IMAGES } from '../config'
 import { useInView } from '../hooks/useInView'
+import { publicUrl } from '../utils/publicUrl'
 
 const rotations = ['-rotate-1', 'rotate-1', 'rotate-0', '-rotate-2', 'rotate-2', '-rotate-1']
 
@@ -33,7 +34,7 @@ export default function MemoryGallery() {
               <div className="relative rounded-sm bg-zinc-900 p-3 pb-10 shadow-[0_8px_32px_-4px_rgba(0,0,0,0.7),0_0_0_1px_rgba(212,175,55,0.15)] ring-1 ring-gold-500/15 transition duration-500 group-hover:-translate-y-1 group-hover:shadow-[0_24px_60px_-12px_rgba(0,0,0,0.85)] group-hover:ring-gold-500/30">
                 <div className="overflow-hidden bg-zinc-800">
                   <img
-                    src={img.src}
+                    src={publicUrl(img.src)}
                     alt={img.caption ?? img.alt}
                     className="w-full object-cover object-center transition duration-700 group-hover:scale-[1.03]"
                     style={{ aspectRatio: '3 / 4' }}

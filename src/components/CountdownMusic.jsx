@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { COUNTDOWN_TARGET_ISO, HER_NAME, OUR_SONG_PATH } from '../config'
+import { publicUrl } from '../utils/publicUrl'
 import { useInView } from '../hooks/useInView'
 
 function pad(n) {
@@ -151,7 +152,7 @@ export default function CountdownMusic() {
           </div>
           <audio
             ref={audioRef}
-            src={OUR_SONG_PATH}
+            src={publicUrl(OUR_SONG_PATH)}
             preload="metadata"
             onError={() => setAudioError(true)}
           />
